@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient background with smooth corners -->
+  <rect width="200" height="200" rx="30" fill="url(#gradientBg)" />
+
+  <!-- Centered, bold, modern "N" -->
+  <path d="M65 50V150H85V95L130 150H145V50H125V105L80 50H65Z" fill="white"/>
+
+  <!-- Subtle decorative diagonal line -->
+  <line x1="50" y1="170" x2="170" y2="50" stroke="white" stroke-opacity="0.12" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Stylish glowing dots -->
+  <circle cx="45" cy="45" r="5" fill="white" opacity="0.4"/>
+  <circle cx="155" cy="155" r="5" fill="white" opacity="0.4"/>
+
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="gradientBg" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+  </defs>
+</svg>
