@@ -1,0 +1,19 @@
+# Netlify configuration file
+# This handles client-side routing for React applications
+
+[build]
+  # Base directory (optional)
+  # base = ""
+  
+  # Build command (optional)
+  # command = "npm run build"
+  
+  # Publish directory (already set in Netlify dashboard)
+  # publish = "dist"
+
+# This is the most important part - redirect all routes to index.html
+# This allows the React Router to handle the routing client-side
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 

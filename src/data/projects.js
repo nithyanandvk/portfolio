@@ -3,7 +3,7 @@ export const PROJECTS = [
   {
     _id: '1',
     title: 'ISTE MBU & SVEC Club Website',
-    summary: 'We proudly developed the official website for ISTE MBU & SVEC – a vibrant digital space to showcase our club’s events, teams, and achievements.',
+    summary: "We proudly developed the official website for ISTE MBU & SVEC – a vibrant digital space to showcase our club's events, teams, and achievements.",
     description: 'We successfully developed and launched the official website of the ISTE MBU & SVEC Club – a proud milestone of 2024! This dynamic full-stack platform was built to make our club more visible and accessible online. It features a fully responsive design, an engaging events page with registrations and YouTube integrations, a detailed team showcase, a gallery of club memories, and a secure admin portal for content updates. With robust authentication, form handling, and cloud deployment, the website empowers our team to keep the platform fresh and active. Grateful to our faculty head, amazing teammates, seniors, and ISTE family for their constant support. Recognized as Web Lead for leading this meaningful initiative!',
     image: 'https://res.cloudinary.com/dzsgjnpzh/image/upload/v1745337700/aylqwzibkvonxckwh6ho.png',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js', 'MongoDB'],
@@ -59,7 +59,7 @@ export const PROJECTS = [
     image: 'https://res.cloudinary.com/dzsgjnpzh/image/upload/v1745339537/jatm56g75wsczd2rkzpv.png',
     technologies: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Cursor AI'],
     github: 'https://github.com/nithyanandvk/modern-portfolio',
-    liveDemo: 'https://portfolio-vite-demo.vercel.app',
+    liveDemo: 'https://nithyanandvk.netlify.app/',
     featured: false,
     category: 'Frontend'
   }

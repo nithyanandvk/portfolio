@@ -348,10 +348,153 @@
     transform: translateZ(0);
     backface-visibility: hidden;
   }
+  
+  /* Optimize for smoother scrolling */
+  html, body {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Prevent re-animation of elements when scrolling up */
+  .scrolling-up [data-animated="true"],
+  .scrolling-up .animated {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    visibility: visible !important;
+  }
+  
+  /* Make animations shorter and smoother on mobile */
+  .motion-div, 
+  .motion-section,
+  [class*="motion-"] {
+    transition-duration: 0.3s !important;
+    animation-duration: 0.3s !important;
+  }
+  
+  /* Completely disable all animations on scroll for mobile */
+  .disable-animations-on-scroll .scrolling *,
+  .disable-animations-on-scroll.scrolling * {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  
+  /* Ensure elements that have been animated once stay visible and don't re-animate */
+  .disable-animations-on-scroll [data-animated="true"],
+  .disable-animations-on-scroll .animated {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  /* Simplify animations on mobile for better performance */
+  .disable-animations-on-scroll .motion-div,
+  .disable-animations-on-scroll .motion-section,
+  .disable-animations-on-scroll [class*="motion-"] {
+    transition: opacity 0.2s ease-out !important;
+    animation: none !important;
+  }
+  
+  /* Completely disable all animations on mobile devices */
+  .no-animations *,
+  body.no-animations * {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+    animation-delay: 0s !important;
+    transition-delay: 0s !important;
+  }
+  
+  /* Only allow opacity transitions for loading content */
+  body.no-animations .animate-pulse,
+  body.no-animations img[loading] {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite !important;
+  }
+
+  /* Mobile optimized animations - smoother and lighter */
+  .mobile-optimized *,
+  body.mobile-optimized * {
+    /* Optimize performance with GPU acceleration */
+    will-change: opacity, transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    
+    /* Shorter animation durations */
+    transition-duration: 0.2s !important;
+    animation-duration: 0.2s !important;
+  }
+  
+  /* Keep initial values to prevent jumpy animations */
+  body.mobile-optimized [data-animated="true"],
+  body.mobile-optimized .animated {
+    will-change: auto !important;
+    transform: none !important;
+  }
+  
+  /* Prevent scrolling issues by disabling animation during scroll */
+  body.mobile-optimized.scrolling * {
+    animation-play-state: paused !important;
+    transition: none !important;
+  }
+  
+  /* Fix spacing between sections on mobile */
+  body.mobile-optimized section {
+    margin-bottom: 0 !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    min-height: auto !important;
+  }
+  
+  /* Reduce animation transition lengths to prevent blank spaces */
+  body.mobile-optimized .motion-div,
+  body.mobile-optimized motion.div {
+    transition-duration: 0.15s !important;
+  }
+  
+  /* Prevent "pop-in" animations from causing layout shifts */
+  body.mobile-optimized [class*="animate-"],
+  body.mobile-optimized [class*="motion-"] {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+  
+  /* Show content immediately to prevent blank spaces */
+  body.mobile-optimized section > div,
+  body.mobile-optimized .container {
+    opacity: 1 !important;
+  }
+  
+  /* Improve spacing between elements */
+  body.mobile-optimized h1, 
+  body.mobile-optimized h2,
+  body.mobile-optimized h3 {
+    margin-bottom: 0.75rem !important;
+  }
+  
+  body.mobile-optimized p {
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Reduce grid spacing to prevent gaps */
+  body.mobile-optimized .grid {
+    gap: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+/* Add class for elements that have completed their animation */
+.animated {
+  animation: none !important;
 }
 
 /* Add JS helper for disabling hover animations while scrolling */
-/* (Add JavaScript code in separate file to apply this class while scrolling) */
 .scrolling * {
   animation-play-state: paused !important;
 }

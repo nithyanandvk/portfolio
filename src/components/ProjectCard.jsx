@@ -28,7 +28,7 @@ const ProjectCard = ({ project, index = 0 }) => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
           <div className="p-3 sm:p-4 w-full">
             <div className="flex justify-end space-x-2 sm:space-x-3">
-              <motion.a 
+              {/* <motion.a 
                 href={github} 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -38,7 +38,7 @@ const ProjectCard = ({ project, index = 0 }) => {
                 whileTap={{ scale: 0.9 }}
               >
                 <FaGithub size={16} />
-              </motion.a>
+              </motion.a> */}
               
               {liveDemo && (
                 <motion.a 
