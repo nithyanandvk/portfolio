@@ -314,7 +314,7 @@ const Home = () => {
                   className="absolute -inset-4 bg-blue-100 rounded-full opacity-30 blur-xl"
                 ></div>
                 <img
-                  src="https://res.cloudinary.com/dzsgjnpzh/image/upload/v1745323603/yjceqohqkgrbn0r8nchd.jpg"
+                  src="https://res.cloudinary.com/dzsgjnpzh/image/upload/v1745762659/jabyhn8cms4z7ivhzkax.png"
                   alt="Nithyanand V K"
                   className={`relative rounded-full w-full max-w-md mx-auto object-cover aspect-square ${!heroImageLoaded && 'opacity-0'}`}
                   loading="eager"
