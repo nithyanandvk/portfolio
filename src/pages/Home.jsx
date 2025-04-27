@@ -855,36 +855,55 @@ const Home = () => {
             className="text-center max-w-2xl mx-auto"
             isMobile={isMobile}
           >
-            <div
-              className="inline-flex items-center justify-center mb-5 bg-blue-100 p-4 rounded-full text-blue-600"
-            >
-              <FaBriefcase size={24} />
+            <div className="flex items-center justify-center gap-4 mb-5">
+              <div className="inline-flex items-center justify-center bg-blue-100 p-4 rounded-full text-blue-600">
+                <FaBriefcase size={24} />
+              </div>
+              <h2 className="text-3xl font-bold text-gray-800 inline-flex items-center gap-2">
+                <span className="bg-green-100 h-2 w-2 rounded-full inline-block animate-pulse"></span>
+                Hire Me
+              </h2>
             </div>
-            <h2
-              className="text-3xl font-bold mb-3 text-gray-800 inline-flex items-center justify-center gap-2"
-            >
-              <span className="bg-green-100 h-2 w-2 rounded-full inline-block animate-pulse"></span>
-              Open to Work
-            </h2>
             <p
               className="text-gray-600 text-lg mb-6"
             >
-              I'm available for full-time positions, contract roles, freelance projects, and internships.
+              I'm available for full-time positions, internships, and freelance projects. Let's create something amazing together!
             </p>
 
-            {/* Contact Button */}
-            <MobileAwareMotion
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition-all hover:shadow-lg"
+            {/* Resume Download Button */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <MobileAwareMotion
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                isMobile={isMobile}
               >
-                <FaEnvelope />
-                Contact Me
-              </Link>
-            </MobileAwareMotion>
+                <a
+                  href="/Nithyanand_V_K_Resume.pdf"
+                  download="Nithyanand_V_K_Resume.pdf"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition-all hover:shadow-lg"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L10 12.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+                    <path fillRule="evenodd" d="M10 3a1 1 0 011 1v9.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 111.414-1.414L9 13.586V4a1 1 0 011-1z" clipRule="evenodd" />
+                  </svg>
+                  Download Resume
+                </a>
+              </MobileAwareMotion>
+              
+              <MobileAwareMotion
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                isMobile={isMobile}
+              >
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 px-6 py-3 border-2 border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-all"
+                >
+                  <FaEnvelope className="h-5 w-5" />
+                  Contact Me
+                </Link>
+              </MobileAwareMotion>
+            </div>
           </MobileAwareMotion>
         </div>
       </MobileAwareSection>
