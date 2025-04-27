@@ -878,8 +878,8 @@ const Home = () => {
                 isMobile={isMobile}
               >
                 <a
-                  href="/Nithyanand_V_K_Resume.pdf"
-                  download="Nithyanand_V_K_Resume.pdf"
+                  href="./Nithyanand_V_K_Resume.pdf"
+                  download
                   className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition-all hover:shadow-lg"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
