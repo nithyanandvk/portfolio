@@ -1,12 +1,22 @@
-# React + Vite
+# 💼 Nithyanand V K – Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website, built to showcase my projects, achievements, skills, and experience as a passionate software developer and student.
 
-Currently, two official plugins are available:
+## 🌐 Live Site
+[https://nithyanandvk.netlify.app](https://nithyanandvk.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 About
+I'm Nithyanand V K, a full stack developer and Java programmer with a strong foundation in data structures and algorithms. This portfolio presents my technical journey, project highlights, certifications, leadership experiences, and more.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- **Frontend**: React.js, Tailwind CSS, HTML, CSS, JavaScript
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB, MySQL
+- **Tools**: Git, GitHub, Vite, Netlify
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Highlights
+- 📂 **Projects Section**: Showcases full-stack applications, hackathon entries, and dynamic websites.
+- 🏆 **Achievements**: Hackathon wins, certifications, and coding milestones.
+- 💼 **Experience & Roles**: Leadership and development roles in ISTE, GDSC, and Coding Club.
+- 📊 **Skills & Tools**: A summary of languages, frameworks, tools, and platforms.
+- 📃 **Resume**: Downloadable resume and quick overview of education & certifications.
